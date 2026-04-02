@@ -557,6 +557,40 @@
             color: var(--text-secondary);
         }
 
+        .ws-flashback {
+            margin: 1rem 0 1.2rem;
+            border-radius: 14px;
+            border: 1px solid #3a4450;
+            background: rgba(92, 102, 119, 0.14);
+            overflow: hidden;
+        }
+
+        .ws-flashback summary {
+            list-style: none;
+            cursor: pointer;
+            user-select: none;
+            font-size: 0.82rem;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: #cfd7e4;
+            background: rgba(75, 87, 106, 0.22);
+            padding: 0.7rem 0.9rem;
+            border-bottom: 1px solid rgba(159, 170, 189, 0.24);
+        }
+
+        .ws-flashback summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .ws-flashback-body {
+            color: #d8deea;
+            background: rgba(61, 70, 86, 0.2);
+            padding: 0.9rem 1rem 1rem;
+            border-top: 1px solid rgba(159, 170, 189, 0.16);
+            line-height: 1.75;
+            white-space: normal;
+        }
+
         .story-title {
             color: var(--text-primary);
             font-size: 2rem;
@@ -937,7 +971,7 @@
                     {
                         id: "a7189-ruptura-nadir",
                         title: "A7189: La Ruptura Nadir",
-                        desc: "En el Universo Nadirium, el soberano Kaelthar Voss inicia una guerra total cuando la Legion Arconte captura a su hijo Eryon en la Tierra-A7189. En el caos aparece un nino llamado Lian con la misma aura, y las pistas de su verdadera identidad se vuelven cada vez mas evidentes.",
+                        desc: "En el Universo Nadirium, el soberano Kaelthar Voss inicia una guerra total cuando la Legion Arconte captura a su hijo Eryon en la Tierra-A7189. En el caos aparece un niño llamado Lian con la misma aura, y las pistas de su verdadera identidad se vuelven cada vez mas evidentes.",
                         cover: "assets/a7189-ruptura-nadir.jpg",
                         releaseDate: "2026-03-13T00:00:00",
                         isPreOrder: false,
@@ -1010,10 +1044,10 @@ General: Trescientos edificios en cero milisegundos.
 Arconte: Eso no es posible.
 Kaelthar: No lo discutas.
 
-En los corredores de bloqueo, la Legion sellaba rutas para ganar segundos. Para Kaelthar, cada cierre era una senal clara.
+En los corredores de bloqueo, la Legion sellaba rutas para ganar segundos. Para Kaelthar, cada cierre era una señal clara.
 
 Kaelthar: Eryon, responde.
-Registro: Senal debil, nivel critico.
+Registro: Señal debil, nivel critico.
 Arconte: Bloqueen pasillos.
 Kaelthar: Cada puerta que cierran me los muestra.
 
@@ -1026,7 +1060,7 @@ El soberano escucho lo que nadie mas podia oir: el niño no pensaba en huir por 
                                     },
                                     {
                                         id: "a7189-e3",
-                                        title: "Episodio III - El Nino del Aura",
+                                        title: "Episodio III - El Niño del Aura",
                                         price: 220,
                                         content: {
                                             ES: `La frase se repitio una y otra vez en su mente. Kaelthar la conto sin querer: la decima vez llego con un temblor y una distraccion en el frente cercano. El niño aprovecho y huyo con la velocidad de quien solo sabe sobrevivir. No avanzo mucho: un soldado cosmico lo alcanzo, lo sometio con una sola mano y concentro un aura lista para ejecutarse.
@@ -1093,7 +1127,7 @@ En la camara vacia, el eco de un aura quedo pegado a las paredes. El dolor que d
 
 Kaelthar: Esta camara tenia tu aura.
 Lian: Me duele la frente cuando lo dices.
-Kaelthar: Dime que eres un senuelo.
+Kaelthar: Dime que eres un señuelo.
 Lian: No se lo que soy.
 
 En el corredor central, el nucleo Arconte latia como una jaula. Si caia, el sello planetario se fracturaria y A7189 quedaria desnudo.
@@ -1146,11 +1180,612 @@ Lian lo miro con una palabra que casi fue un nombre. El voto quedo incompleto y 
                                 ]
                             }
                         ]
+                    },
+                    {
+                        id: "fl135-hermanos-del-umbral",
+                        title: "Ceniza de Sangre",
+                        desc: "Tras sobrevivir al intento de aniquilacion del planeta FL135, Rhazel Korr (alias de guerra de Sylas Korr), un atacante de 16 años, encuentra a un niño maltratado en medio de las ruinas. Lo que comienza como un cruce imposible termina abriendo una verdad devastadora: podria ser su hermano menor perdido.",
+                        cover: "assets/cenizadesangre.jpeg",
+                        releaseDate: "2026-03-30T00:00:00",
+                        isPreOrder: false,
+                        featured: true,
+                        seasons: [
+                            {
+                                name: "Temporada 1: Reencuentro entre Ruinas",
+                                episodes: [
+                                    {
+                                        id: "fl135-e1",
+                                        title: "Episodio I - Techo de Piedra",
+                                        price: 190,
+                                        content: {
+                                            ES: `Rhazel Korr quedo de pie sobre una roca negra, respirando polvo caliente, con otra losa enorme sostenida por una base rota que funcionaba como techo improvisado. Habia venido para borrar FL135 del mapa y, aun asi, el planeta seguia vivo. Herido, pero vivo.
+
+El joven giro la cabeza con una velocidad inhumana. No fue intuicion; fue presencia. Un pulso debil, nervioso, escondido entre sombras.
+
+Rhazel: Sali. No voy a perseguirte.
+
+Desde el fondo del refugio salio un niño de no mas de seis o siete años. Lo vio, dio un paso atras y cayo contra el muro, abrazando sus piernas en posicion fetal.
+
+Niño: No... no te acerques.
+Rhazel: Tranquilo. Si quisiera hacerte dano, ya habria terminado.
+
+El niño temblaba como si la tierra aun siguiera explotando, pero Rhazel supo que no era por la guerra de afuera. Era otro miedo. Uno viejo. Uno diario.
+
+En ese instante, por primera vez desde el asalto, Rhazel sintio algo peor que la rabia: reconocimiento.
+
+No del rostro.
+Del miedo.
+
+Ese miedo era el mismo con el que el habia crecido antes de pelear hasta sangrar para salir de su propia violencia.`
+                                        }
+                                    },
+                                    {
+                                        id: "fl135-e2",
+                                        title: "Episodio II - Pulso del Miedo",
+                                        price: 210,
+                                        content: {
+                                            ES: `Rhazel intento bajar la intensidad de su aura para no aplastarlo con su sola presencia.
+
+Rhazel: Respira. Nadie te va a pegar conmigo aca.
+
+Al levantar la mano para mostrar que no llevaba arma activa, el niño se protegio mas fuerte, encogiendo la cabeza entre los brazos, como quien ya conoce exactamente el siguiente golpe.
+
+Rhazel cerro los ojos un segundo.
+Esa reaccion no se fingia.
+
+Rhazel: Ya entendi. Te pegan en casa.
+
+El niño rompio en llanto. No fuerte. Desarmado. Entre frases cortadas le conto como sus padres lo maltrataban por cualquier cosa: por hablar, por llorar, por existir en mal momento.
+
+Niño: Si hago ruido... me pegan.
+Niño: Si no hago ruido... tambien.
+Rhazel: Nadie deberia aprender eso a tu edad.
+
+Rhazel no era compasivo con humanos. No de esa forma. Pero el relato del niño le atraveso una parte que creia enterrada.
+
+Entonces hizo algo que no esperaba hacer jamas: se sento a su lado, despacio, y dejo su brazo entre la espalda y los hombros del pequeno para contenerlo sin forzarlo.
+
+El niño no huyo. Solo lloro mas. Mucho mas.
+
+Y Rhazel se quedo alli. Sin ordenes. Sin guerra. Solo escuchando.`
+                                        }
+                                    },
+                                    {
+                                        id: "fl135-e3",
+                                        title: "Episodio III - Nombres en Ceniza",
+                                        price: 230,
+                                        content: {
+                                            ES: `Cuando el llanto se volvio respiracion, Rhazel comenzo a preguntar con cuidado.
+
+Rhazel: Como te llamas.
+Niño: Elian.
+Rhazel: Cuantos años tenes.
+Elian: Siete.
+
+Siete.
+El mismo numero que le rompio el pecho a Rhazel.
+
+Rhazel: Tenes hermanos.
+Elian: Una hermana... y dos hermanos.
+
+Elian le conto que sus dos hermanos mayores se habian ido por los maltratos. No lograron llevarselo a el. Su hermana, Vera, era la consentida y la unica intocable en la casa.
+
+Elian: Antes de irse, ellos me cuidaban.
+Elian: Uno entrenaba todo el tiempo para volverse muy fuerte.
+Elian: El otro tambien entrenaba... pero era oficial. Siempre andaba con uniforme.
+
+Rhazel se quedo inmovil.
+Demasiado preciso. Demasiado igual.
+
+Uno que entrenaba para proteger.
+Otro que eligio la placa para sostener el orden.
+
+Los perfiles coincidian con Darian y Sylas, sus hermanos perdidos.
+
+Rhazel: Elian... como se llaman tus hermanos.
+
+Elian apreto los dedos, como si responder fuera peligroso.
+Y dijo dos nombres que Rhazel no escuchaba desde que su mundo se partio en dos.
+
+Elian: Darian... y Sylas.`
+                                        }
+                                    },
+                                    {
+                                        id: "fl135-e4",
+                                        title: "Episodio IV - El Nombre Prohibido",
+                                        price: 250,
+                                        content: {
+                                            ES: `El refugio quedo en silencio. Afuera seguian cayendo fragmentos de la batalla sobre FL135, pero para Rhazel todo el ruido se habia ido.
+
+Rhazel: Decime algo mas. Tu hermana como se llama.
+Elian: Vera.
+Rhazel: Y tus padres.
+Elian: No quiero decirlos...
+
+No hizo falta.
+El patron ya estaba completo.
+
+Rhazel se aparto medio paso, se llevo una mano al rostro y busco aire. Habia luchado contra escuadrones enteros sin temblar, pero ahora sus piernas pesaban como plomo.
+
+Elian: Hice algo mal.
+Rhazel: No. Vos no hiciste nada mal.
+
+Rhazel dudo unos segundos. Luego pronuncio un nombre que no usaba en guerra, solo en memoria.
+
+Rhazel: Mi nombre real es Sylas Korr.
+Rhazel: Rhazel fue el nombre que use en guerra.
+
+Elian alzo la mirada por primera vez sin esconderse.
+La expresion fue de shock, luego de confusion, y despues de una certeza que dolia.
+
+Elian: Sylas...
+Elian: Darian me hablaba de vos.
+
+La piedra bajo sus pies se sintio mas inestable que cualquier frente de combate.
+No era un posible parecido.
+Era su hermano menor.
+Vivo.
+Roto.
+Ahi mismo.`
+                                        }
+                                    },
+                                    {
+                                        id: "fl135-e5",
+                                        title: "Episodio V - El Abrazo que Volvio",
+                                        price: 270,
+                                        content: {
+                                            ES: `Rhazel se arrodillo frente a Elian, sin imponer altura ni fuerza.
+
+Rhazel: Soy yo.
+Rhazel: Llegue tarde, pero estoy aca.
+
+Elian intento responder y no pudo. Se lanzo sobre el pecho de Rhazel con un llanto que no era solo tristeza: era alivio acumulado durante años.
+
+Elian: Pense que nadie iba a volver por mi.
+Rhazel: Te prometo que no te suelto mas.
+
+Rhazel lo abrazo con ambas manos, firme, como si pudiera coser cada fractura del niño solo con quedarse.
+No era un gesto de heroe.
+Era familia.
+
+Elian: Darian decia que ibas a aparecer cuando todo se pusiera oscuro.
+Rhazel: Se equivoco en una cosa.
+Elian: Cual.
+Rhazel: No vengo solo a aparecer. Vengo a sacarte de aca.
+
+El techo de roca temblo por otra onda de impacto. Rhazel activo su aura en un circulo protector alrededor de ambos.
+
+Elian: Y si vuelven.
+Rhazel: Entonces van a conocerme de verdad.
+
+Rhazel se puso de pie con Elian en brazos y miro el horizonte incendiado de FL135. Esta vez no vio objetivo militar ni territorio de conquista. Vio ruta de escape, refugios, nombres pendientes y una guerra mucho mas personal.
+
+La reunion no cerraba una historia.
+Apenas abria la primera puerta.
+
+Porque recuperar a Elian era solo el comienzo.
+Quedaban Vera, quedaban cuentas de sangre, y quedaba una familia rota que el universo entero estaba a punto de mirar de frente.`
+                                        }
+                                    },
+                                    {
+                                        id: "fl135-e6",
+                                        title: "Episodio VI - Cuando el Dolor Despierta",
+                                        price: 285,
+                                        content: {
+                                            ES: `Apenas el horizonte comenzo a perder color, Elian se incorporo de golpe con un grito que no parecia humano. No era un susto breve: era dolor puro, viejo, acumulado en el cuerpo como si cada golpe de años anteriores hubiera decidido volver al mismo tiempo.
+
+Elian: ¡No! ¡No, por favor, no!
+
+Sylas reacciono por instinto, como un hermano antes que como soldado. Dejo caer todo el mapa tactico que llevaba en la cabeza y se arrodillo frente a el, buscando su mirada, sin forzarlo.
+
+Sylas: Elian, escuchame. Estas conmigo.
+Sylas: Nadie te esta tocando. Nadie.
+
+Pero la respiracion de Elian iba demasiado rapido, rota entre sollozos, dolor y recuerdos cruzados. Su espalda se arqueaba como si su cuerpo quisiera escapar de su propia piel. Sylas intento sostenerlo por los hombros, luego por las manos, luego solo con la voz. Nada alcanzaba.
+
+Elian: ¡Me duele, me duele, me duele!
+Elian: ¡No quiero volver ahi!
+
+Sylas comprendio que no era solo dolor fisico. Habia zonas inflamadas, si, pero el verdadero incendio estaba en la memoria. Aun asi, no podia dejarlo asi. Elevo una mano y activo una tecnica de sanacion de campo, de las que usaba para cerrar heridas de combate en segundos.
+
+La luz azul verdosa cubrio el torso de Elian. Los hematomas recientes cedieron, el pulso muscular se aflojo, la fiebre bajo.
+El dolor del cuerpo se fue.
+El llanto no.
+
+Elian seguia llorando con la misma desesperacion, ahora incluso mas visible, porque ya no habia herida nueva que tapara la vieja.
+
+Elian: No es eso...
+Elian: Aunque no me peguen... me acuerdo igual.
+
+La frase partio a Sylas.
+Por fin entendio con claridad algo que nadie le enseño en guerra: curar carne no cura terror.
+
+Sylas bajo la frente, respiro hondo y cambio de tono. Dejo de hablar como protector armado y hablo como hermano mayor, sin promesas grandiosas, sin frases vacias.
+
+Sylas: Tenes razon.
+Sylas: No puedo borrar lo que te hicieron.
+Sylas: Pero puedo hacer algo real ahora.
+Sylas: Cada vez que te falte aire, me miras.
+Sylas: Cada vez que te tiemble el cuerpo, me hablas.
+Sylas: Y cada vez que sientas que te hundis... te saco yo.
+Sylas: No te suelto. Ni hoy, ni despues.
+
+Elian redujo el llanto a espasmos cortos. Seguía al borde del colapso, con la mirada perdida y los dedos entumecidos, pero la voz de Sylas le dio un punto de anclaje por primera vez.
+
+No estaba bien.
+No estaba curado.
+Pero por un momento, no se rompio.
+
+Sylas lo abrazo otra vez, mas lento, cuidando no encerrarlo. Sabia que los colapsos podian volver en cualquier segundo y, aunque habia estudiado miles de escenarios de guerra, jamas habia tenido que guiar a alguien por una tormenta emocional de ese nivel.
+
+Ese amanecer, Sylas aprendio lo mas dificil: que salvar a Elian no iba a ser una batalla unica.
+Iba a ser una presencia constante.
+Una promesa repetida.
+Una guerra larga contra recuerdos que no daban tregua.`
+                                        }
+                                    },
+                                    {
+                                        id: "fl135-e7",
+                                        title: "Episodio VII - Manual para No Caer",
+                                        price: 300,
+                                        content: {
+                                            ES: `Elian se durmio apenas unos minutos, agotado, con la respiracion entrecortada. Sylas no se movio de su lado. Permanecio sentado contra la roca, contando cada inhalacion como si fuera un codigo de supervivencia.
+
+Cuando Elian desperto, no grito. Pero sus ojos se clavaron en un punto vacio y su cuerpo entro en alerta sin motivo visible: hombros rigidos, manos heladas, mandibula apretada.
+
+Sylas reconocio la antesala.
+No era dolor.
+Era inicio de colapso.
+
+Sylas: Elian, quedate aca conmigo.
+Sylas: Decime tres cosas que ves.
+
+Elian tardo en responder.
+
+Elian: Piedra...
+Elian: Tu guante...
+Elian: La luz en el piso...
+
+Sylas lo hizo seguir.
+
+Sylas: Bien. Ahora dos sonidos.
+Elian: Viento...
+Elian: Tu voz...
+
+Sylas asintio, aunque por dentro improvisaba todo. Nunca habia visto un colapso de cerca. Solo habia leido reportes medicos despues de operaciones urbanas. Ahora el reporte estaba vivo y lo miraba con miedo.
+
+Sylas: Una cosa mas. Decime donde estas.
+Elian: Con vos.
+
+Ese "con vos" fue pequeño, pero suficiente para frenar la caida.
+
+Aun asi, Elian volvio a temblar al oir un metal caer a metros del refugio. El ruido disparo otro recuerdo y su pecho se cerro de nuevo.
+
+Elian: Va a volver... va a volver...
+Sylas: Escuchame bien.
+Sylas: Lo que vuelve es el recuerdo.
+Sylas: No ellos.
+Sylas: Aca mando yo.
+Sylas: Y no te van a tocar.
+
+Elian apreto los ojos con fuerza, luchando por creerle. Sylas entonces cambio la estrategia: saco una tiza de marcaje tactico y dibujo una linea en el suelo, un circulo incompleto y tres puntos.
+
+Sylas: Esto es nuestro mapa de salida.
+Sylas: Punto uno: respirar.
+Sylas: Punto dos: nombrar lo real.
+Sylas: Punto tres: moverse conmigo.
+Sylas: Si se te nubla todo, volvemos al punto uno.
+
+Elian lo observo, confundido al principio, luego atento. Tener pasos concretos le devolvia algo que le habian quitado hace tiempo: control minimo.
+
+Elian: ¿Y si me quiebro otra vez?
+Sylas: Entonces repetimos.
+Elian: ¿Y si no alcanza?
+Sylas: Entonces repetimos mas.
+Sylas: No hay limite para eso.
+
+Durante horas practicaron el "manual para no caer". Respirar en cuatro tiempos. Nombrar objetos cercanos. Identificar sonido seguro. Tocar la piedra fria para recordar presente. Mirar a Sylas y volver.
+
+No fue limpio.
+Dos veces Elian quedo al borde de un nuevo colapso.
+Dos veces Sylas casi entra en panico por no saber si estaba haciendolo bien.
+Pero no huyo.
+No se endurecio.
+No lo trato como una carga.
+
+Al final del dia, Elian pudo sostener la mirada diez segundos sin quebrarse. Para otro, eso no era nada. Para ellos, era una victoria inmensa.
+
+Sylas guardo el mapa de tiza en memoria. Ya no como tacticista de guerra, sino como hermano que por fin habia encontrado una forma de ayudar.
+
+La noche cayo sobre FL135.
+Y por primera vez desde el reencuentro, Elian logro dormir sin llorar.
+
+Sylas no celebro.
+Solo miro el cielo roto y acepto una verdad nueva:
+no bastaba con rescatarlo.
+Habia que enseñarle, dia a dia, que su vida podia dejar de ser miedo.
+
+Ese fue el inicio real de su reconstruccion.`
+                                        }
+                                    },
+                                    {
+                                        id: "fl135-e8",
+                                        title: "Episodio VIII - Casa Sobre Ceniza",
+                                        price: 340,
+                                        content: {
+                                            ES: `Sylas no espero otra alarma. Con Elian pegado a su brazo, activo un pliegue de salto y partio el aire en una linea vertical de luz azul. El refugio de FL135 desaparecio atras como una herida cerrandose mal. Un segundo despues, ambos pisaron marmol oscuro bajo un cielo pacifico, sin humo, sin sirenas, sin escombros cayendo.
+
+Era Aster V, el planeta donde Sylas habia construido su nueva rutina de guerra silenciosa.
+
+La casa se alzaba frente a ellos con una sobriedad imponente: tres niveles, balcones amplios, blindaje discreto bajo paneles de madera clara, invernadero lateral, sala central con techo alto y un corredor que podia recibir a una docena de personas sin sentirse lleno. No parecia una fortaleza. Parecia un lugar donde alguien intentaba recordar como se vive sin pelear.
+
+Elian miro todo con una mezcla rara: asombro y desconfianza.
+
+Elian: ¿Esto... es tuyo?
+Sylas: Si.
+Elian: ¿Desde cuando?
+Sylas: Desde el suceso.
+
+Elian no pregunto que suceso. El silencio de Sylas ya traia la respuesta en los ojos.
+
+[FLASHBACK|Duelo Final por la Casa]
+Noche de lluvia. Sector Varek, patio central.
+
+El suelo estaba cubierto de agua y sangre mezcladas cuando Sylas dio el ultimo paso. Tenia el costado abierto, dos costillas fisuradas y la vision partida por los golpes, pero seguia en pie. Frente a el, sus padres sostenian armas cortas y una superioridad vieja, esa que usaban en casa antes de usarla en la calle.
+
+Padre: Nunca volviste como hijo. Volviste como plaga.
+Madre: Si querias algo, debiste pedirlo de rodillas.
+
+Sylas escupio sangre, enderezo el torso y dejo caer su hoja al piso. No por debilidad. Por decision.
+
+Sylas: Hoy no vine a pedir nada.
+Sylas: Vine a cerrar cuentas.
+
+El padre avanzo primero con un corte lateral buscando cuello. Sylas bloqueo con antebrazo, giro cadera y lo estrello contra el pilar de piedra. La madre intento entrar por ciego con una hoja de energia corta. Sylas la desarmo con un quiebre de muñeca y la empujo contra la baranda rota.
+
+Padre: ¡Acabalo de una vez!
+Madre: ¡Es ahora o nunca!
+
+Sylas activo aura plena solo un instante. El patio entero vibro. Las luces de la casa parpadearon como si el edificio reconociera quien mandaba de verdad.
+
+Sylas: Podria terminar esto en un segundo.
+Sylas: Pero no les voy a dar una salida limpia.
+
+Los dejo vivos. No por perdon. Por condena.
+
+Sylas levanto la mano derecha y proyecto sobre el aire el registro de propiedad hackeado horas antes, firmado con sello legal, biometria y transferencia por incumplimiento criminal.
+
+Sylas: Esta casa ya no es suya.
+Sylas: Cada ladrillo de este lugar pasa a mi nombre hoy.
+Sylas: Ustedes no me van a heredar nada.
+Sylas: Yo les voy a quitar todo.
+
+Padre: Esa casa es nuestra.
+Sylas: Era.
+Madre: ¿Y que te crees ahora?
+Sylas: El final de su impunidad.
+
+Antes de irse, Sylas se acerco al umbral y toco la puerta principal, la misma que años atras se cerraba sobre sus gritos. No sonrio. No celebro. Solo decreto:
+
+Sylas: Esta casa deja de ser su trono.
+Sylas: Desde hoy es territorio recuperado.
+
+Y desaparecio bajo la lluvia, con una venganza incompleta y una lista larga todavia abierta.
+[/FLASHBACK]
+
+Elian bajo la mirada cuando Sylas termino de hablar, como si hubiera escuchado el flashback entre lineas sin que nadie lo narrara en voz alta.
+
+Sylas lo guio por el pasillo principal hasta el dormitorio. Habia dos camas enfrentadas, una lampara tenue color miel y una ventana enorme con vista a un lago inmovil. Todo estaba preparado para calma. Elian, sin embargo, seguia respirando como si en cualquier momento fueran a romper la puerta.
+
+Sylas lo arropo despacio, cuidando no invadir.
+
+Sylas: No hay cerraduras por fuera.
+Sylas: No hay gritos en esta casa.
+Sylas: Si te despertas, me llamas.
+
+Elian asintio, pero sus manos seguian frias, apretando la manta como escudo. El miedo no obedecia la logica; no importaba que los agresores no estuvieran. Su cuerpo todavia vivia en alarma.
+
+Elian: Si cierro los ojos... vuelven.
+Sylas: Entonces no los cerramos de golpe.
+Sylas: Respira conmigo diez veces.
+
+Contaron juntos. En la quinta respiracion, Elian volvio a temblar. En la septima, casi rompe en llanto otra vez. Sylas activo entonces una tecnica menor de sueño guiado, una onda de calor leve que no anulaba la conciencia, solo bajaba el umbral de panico.
+
+La energia se apoyo en la frente de Elian como una brisa.
+
+Sylas: No te apaga.
+Sylas: Solo te afloja.
+Sylas: Yo me quedo aca.
+
+Treinta segundos despues de un silencio profundo, Elian cayo dormido con la respiracion por fin regular. Sylas se quedo sentado al borde de la cama, mirando si el pulso se mantenia estable. Recién entonces cruzo al frente y se sento en su propia cama, sin dejar de verlo.
+
+Pero dormir no le llego facil.
+
+El cuarto estaba tranquilo, el planeta estaba tranquilo, la casa estaba segura.
+Su cabeza no.
+
+Darian seguia desaparecido.
+Vera seguia suelta.
+Y Elian era el objetivo mas facil si ellos dos se distraian.
+
+Sylas conocia a Vera mejor que nadie: no buscaba afecto, buscaba ventaja. Si una persona le rendia beneficio, la simulaba cercana. Si no, la descartaba sin piedad.
+
+[FLASHBACK|Vera y la Trampa del Dinero]
+Tarde gris, mercado de paso en Varek.
+
+Vera encontro a Elian cerca de los puestos de recarga y lo recibio con una sonrisa que nunca mostraba en casa.
+
+Vera: Eli, veni. Te compre algo.
+Elian: ¿Para mi?
+Vera: Claro. Si me ayudas con una cosa chiquita.
+
+Le pidio que retirara creditos de una cuenta puente usando su identificacion infantil para evitar rastreo directo. Elian no entendia del todo, pero queria creer que por una vez lo estaban tratando bien.
+
+Elian: ¿Y si esta mal?
+Vera: No seas dramatico.
+Vera: Es por la familia.
+
+Minutos despues, cuando Elian dudo al momento de validar, la voz dulce de Vera se rompio.
+
+Vera: Dale ahora.
+Vera: No me hagas perder tiempo.
+Elian: No quiero.
+
+Vera lo acorralo contra una pared de metal.
+
+Vera: Si no lo haces, te dejo solo con ellos.
+Vera: Y esta vez no te va a salvar nadie.
+
+Levanto la mano para pegarle.
+
+No llego.
+La muñeca quedo frenada en seco por Sylas.
+
+Sylas: Lo volves a tocar y te rompo la mano.
+Vera: Soltame, basura.
+Sylas: Cada insulto que tires, te vuelve.
+Sylas: Cada amenaza que hagas, la cumplo al reves.
+Sylas: Elian no te financia nada.
+
+Vera intento zafarse y pegarle con la otra mano. Sylas la desestabilizo con un empuje seco y la dejo de rodillas.
+
+Vera: Te crees heroe ahora.
+Sylas: No. Me alcanza con ser limite.
+
+En ese punto aparecio Darian, cruzando la calle sin correr, pero con una calma que helaba mas que un grito. Se planto frente a Vera, bajo la mirada hasta quedar a un palmo y hablo sin subir la voz:
+
+Darian: Mas te vale que lo vuelvas a intentar tocar.
+
+Vera no respondio.
+Solo retrocedio.
+
+No por arrepentimiento.
+Por calculo.
+[/FLASHBACK]
+
+De vuelta en el dormitorio, Sylas cerro los ojos solo cuando escucho a Elian murmurar su nombre en sueño, sin terror, casi como una comprobacion de que seguia ahi.
+
+Sylas abrio una libreta tactica y anoto tres lineas antes de acostarse:
+
+1) Prioridad absoluta: proteger a Elian.
+2) Reunificar con Darian.
+3) Neutralizar influencia de Vera antes de contacto directo.
+
+Apago la lampara.
+
+El planeta seguia en silencio.
+La casa seguia en pie.
+Elian seguia dormido.
+
+Y aunque el cansancio por fin le gano el cuerpo, Sylas no cayo dormido de inmediato. Tardo lo suficiente como para revisar diez veces el sensor de puerta y veinte veces la respiracion de su hermano.
+
+Cuando al fin se rindio al sueño, no fue paz completa.
+Fue descanso de guardia.
+Con un ojo en la noche.
+Y el otro en la guerra que venia.`
+                                        }
+                                    },
+                                    {
+                                        id: "fl135-e9",
+                                        title: "Episodio IX - Pacto de Tres Sombras",
+                                        price: 360,
+                                        content: {
+                                            ES: `El amanecer en Aster V llegó limpio, pero la casa no estaba en paz.
+
+Sylas abrió los ojos antes que los sensores, revisó puertas, ventanas, rutas de salida y cámaras internas. Todo estaba en verde. Todo menos Elian.
+
+El niño llevaba varios minutos despierto, sentado al borde de la cama, con la mirada fija y los dedos temblando como si estuviera contando amenazas invisibles.
+
+Elian: No es seguro acá.
+Sylas: Sí lo es.
+Elian: No. Vera va a encontrarme.
+Sylas: No mientras yo respire.
+
+Intentaron rutina de anclaje, respiración, agua, trayecto corto por el pasillo, pero ese día nada se sostenía. Cada ruido mínimo le detonaba una idea peor: que era una carga, que Sylas iba a cansarse, que tarde o temprano lo iban a devolver a la misma violencia.
+
+A media tarde la crisis escaló.
+
+Elian salió corriendo hacia el balcón del segundo nivel, con la respiración rota y el cuerpo en modo pánico total. Sylas lo siguió y lo alcanzó cuando ya tenía medio pie en el borde exterior.
+
+Sylas lo agarró del brazo y lo tiró hacia atrás con fuerza.
+
+Elian gritó, forcejeó y volvió a intentar soltarse.
+
+Fue ahí cuando Sylas le dio un golpe seco en el rostro, no suave, directo, suficiente para romper la espiral y devolverlo al presente.
+
+No fue castigo por llorar.
+Fue un corte de emergencia para evitar una tragedia.
+
+Elian quedó congelado dos segundos.
+Después se desarmó en llanto.
+
+Sylas no lo abrazó de inmediato.
+No lo consintió.
+No le pidió perdón.
+
+Lo dejó llorar un rato, solo, sentado contra la pared del pasillo, para que el impacto emocional bajara sin reforzar la conducta de autodestrucción.
+
+Cuando por fin el llanto pasó de grito a respiración, Sylas se paró frente a él como un sargento en instrucción:
+
+Sylas: Mirame.
+Sylas: Nunca más repetís eso.
+Sylas: Nunca más corrés al borde.
+Sylas: Si sentís que te hundís, hablás.
+Sylas: Si no podés hablar, me señalás.
+Sylas: Pero no te atacás.
+
+Elian no respondió.
+Solo asintió, con vergüenza y rabia mezcladas.
+
+Sylas mantuvo el tono firme unos segundos más, luego lo bajó despacio, sin volverse blando ni sonar a reto:
+
+Sylas: Escuchá bien.
+Sylas: Yo no te voy a abandonar.
+Sylas: Pero tampoco voy a dejar que te destruyas frente a mí.
+Sylas: Entendeme como hermano, no como juez.
+Sylas: Te quiero vivo, aunque me odies un rato por frenarte.
+
+Esa frase le quebró la mirada a Elian.
+
+Elian: No quería morirme...
+Elian: Quería que parara todo.
+Sylas: Lo sé.
+Sylas: Y por eso te paré yo.
+
+Bajaron al salón principal y Sylas armó un protocolo nuevo, más duro y más claro, llamado "Pacto de Tres Sombras", aunque todavía fueran dos en la casa:
+
+1) Ningún desplazamiento solo en altura.
+2) Aviso inmediato ante pensamiento de daño propio.
+3) Palabra de corte "nexo" para detener cualquier crisis.
+4) Si hay colapso, primero seguridad física, después regulación.
+5) Cero contacto con Vera sin validación doble.
+
+Lo firmaron ambos en papel.
+No como ceremonia.
+Como contrato de supervivencia.
+
+La noche cayó pesada.
+Elian volvió a llorar un poco antes de dormir, pero ya no corrió.
+Sylas se quedó en la silla junto a la puerta, en silencio, vigilando respiración y pulso.
+
+Antes de apagar la luz, escribió en su libreta táctica:
+
+"Hoy no hubo consuelo fácil.
+Hoy hubo límite.
+Y el límite también salva."
+
+El episodio cierra con la casa en penumbra, Elian dormido por agotamiento y Sylas despierto, firme, sabiendo que proteger no siempre es abrazar primero:
+a veces es frenar, sostener la línea y esperar el momento correcto para hablar.`
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
-                category: "Nuevas Historias",
+                category: "Universo OWS",
                 books: [
                     {
                         id: "hijo-ente-primario",
@@ -4663,7 +5298,12 @@ Y nadie, por primera vez, está seguro de cuál opción es realmente la más seg
                                 ]
                             }
                         ]
-                    },
+                    }
+                ]
+            },
+            {
+                category: "Era Prehistorica",
+                books: [
                     {
                         id: "prehistoric-era",
                         title: "Prehistoric Era: Defensa Meteórica",
@@ -4681,6 +5321,231 @@ Y nadie, por primera vez, está seguro de cuál opción es realmente la más seg
                                         price: 300,
                                         content: {
                                             ES: "El cielo se partió en dos cuando el primer meteorito atravesó la atmósfera perfecta, marcando el inicio del fin para el paraíso jurásico."
+                                        }
+                                    },
+                                    {
+                                        id: "pe-e2",
+                                        title: "Episodio II  -  Consejo de Colmillos",
+                                        price: 340,
+                                        content: {
+                                            ES: `La noche posterior al primer impacto no se parecía a ninguna otra en el Valle Primordial. Donde antes había coros de insectos, corrientes suaves y el pulso estable de los grandes herbívoros, ahora quedaba un silencio de ceniza interrumpido por truenos secos y desprendimientos en cadena. El cielo, aún herido, mostraba líneas naranjas como si la atmósfera estuviera mal cosida.
+
+Rhauk, el triceratops mayor del Clan de Basalto, avanzó entre árboles partidos con la cornamenta baja. No buscaba pelea; buscaba recuento. Detrás, cinco juveniles seguían sus huellas con miedo visible. A cada crujido se detenían.
+
+Rhauk: No miren atrás.
+Rhauk: Si respiran, caminan.
+Rhauk: Si caminan, viven.
+
+Al otro lado del valle, Nyra, una velociraptor de plumaje oscuro y mirada eléctrica, corría entre fumarolas para llevar un mensaje urgente: no era un solo meteorito. Venían más. Lo sabía porque había visto, desde la cresta de obsidiana, un enjambre de puntos incandescentes perforando la bóveda celeste en formación irregular.
+
+Nyra cruzó el río de azufre por una repisa estrecha, saltó una grieta recién abierta y llegó a la Plaza de Hueso, el antiguo lugar de tregua entre clanes.
+
+Nyra: ¡No es lluvia aislada!
+Nyra: ¡Es una ruta de impacto!
+Nyra: ¡Nos van a barrer por sectores!
+
+Nadie respondió al principio. El Consejo de Colmillos, formado por líderes que llevaban generaciones desconfiando entre sí, apenas se miró. En su centro estaba Orvax, un tiranosaurio viejo con cicatrices blancas, conocido por resolver disputas con fuerza directa y decisiones cortas.
+
+Orvax: Hablas rápido.
+Orvax: Demuéstralo.
+
+Nyra no discutió. Proyectó sobre la roca central, con polvo magnético y saliva de mica, un mapa de trayectorias que había memorizado en carrera: tres corredores de entrada, dos zonas de fractura, un punto de convergencia sobre el Nido de Niebla, donde descansaban miles de huevos de distintas especies bajo custodia neutral.
+
+Ese último dato cambió el aire.
+
+Lira, matriarca pterosaurio del Círculo de Viento, desplegó alas dañadas por partículas calientes y habló con voz de piedra:
+
+Lira: Si caen sobre Nido de Niebla, no perdemos una generación.
+Lira: Perdemos futuro.
+
+Tark, anquilosaurio del Clan Cobre, golpeó el suelo tres veces. Era su forma de pedir turno.
+
+Tark: Defender nidos requiere muro.
+Tark: Muro requiere unión.
+Tark: Unión requiere que dejen de odiarse una noche.
+
+El problema no era táctico; era histórico. Herbívoros y cazadores habían sostenido pactos frágiles durante décadas. Cualquier movimiento mal interpretado encendía guerras locales. Pero el cielo no esperaba diplomacia.
+
+Nyra propuso una estrategia imposible para tiempos normales:
+1) Escuadrón aéreo de Lira para marcar impacto con humo azul.
+2) Bloque de choque de Rhauk para desviar fragmentos medianos en suelo blando.
+3) Cúpula de escudos óseos de Tark alrededor del Nido de Niebla.
+4) Orvax y los suyos como fuerza de interrupción, no de conquista.
+
+Orvax fijó la vista en ella durante largos segundos.
+
+Orvax: ¿Y si mientes para reunirnos y atacar?
+Nyra: Entonces morimos juntos igual.
+
+No era brillante. Era exacto.
+
+La segunda oleada llegó antes de cerrar la discusión. Un rugido en altura, luego tres destellos, luego viento de cuchilla. Una roca del tamaño de un santuario cayó sobre el borde de la plaza y convirtió estandartes de hueso en lluvia de astillas.
+
+Por reflejo, todos corrieron.
+Por primera vez, corrieron en la misma dirección.
+
+Rhauk empujó juveniles fuera de la zona de impacto; Nyra mordió la cola de un pequeño estegosaurio para arrastrarlo fuera de una grieta; Lira, pese al ala rota, levantó vuelo rasante para desviar ceniza de los ojos de un grupo de crías.
+Orvax, que siempre llegaba último para rematar, llegó primero para abrir paso.
+
+Cuando el temblor cesó, el consejo ya no era una mesa de discursos.
+Era una unidad sin nombre.
+
+Construyeron la primera Línea de Mordida: troncos cruzados, placas óseas, barro volcánico y columnas de roca para romper trayectoria de fragmentos pequeños. No parecía elegante. Parecía desesperado.
+Funcionó.
+
+A medianoche, un meteorito de tamaño medio golpeó contra la barrera y se partió en seis secciones que cayeron fuera del nido.
+Hubo fuego.
+Hubo heridos.
+No hubo extinción local.
+
+Pero la victoria duró poco.
+Un explorador pterosaurio descendió con plumas quemadas y una noticia peor:
+el tercer corredor venía cargado de fragmentos pesados, demasiado densos para la barrera actual.
+
+Nyra miró el mapa y tragó polvo.
+Si no cambiaban de táctica antes del alba, todo el Valle Primordial se convertiría en una trampa térmica.
+
+Orvax se puso de pie sobre la roca central, sangrando del hombro izquierdo, y declaró algo que ninguno esperaba escuchar de su boca:
+
+Orvax: Desde ahora, mando compartido.
+Orvax: Si alguien rompe formación por orgullo, lo saco yo.
+Orvax: Si alguien salva una vida de otro clan, esa vida cuenta doble.
+
+Rhauk bajó la cabeza en señal de acuerdo.
+Lira levantó una garra.
+Tark golpeó suelo una vez.
+Nyra no sonrió. Solo marcó nuevas coordenadas.
+
+El episodio cierra con un plano ancho del valle:
+la barrera humeando, los clanes mezclados por necesidad y, en el cielo, una cicatriz luminosa cada vez más grande.
+
+No estaban preparados para lo que venía.
+Pero por primera vez desde el impacto, estaban juntos.`
+                                        }
+                                    },
+                                    {
+                                        id: "pe-e3",
+                                        title: "Episodio III  -  La Marcha del Cielo Roto",
+                                        price: 380,
+                                        content: {
+                                            ES: `El alba llegó enferma, filtrada por una capa de ceniza tan gruesa que el sol parecía una piedra opaca suspendida en humo. El Valle Primordial amaneció sin colores: verde apagado, barro oscuro, agua gris. Incluso los rugidos sonaban distintos, como si el aire amortiguara toda voluntad.
+
+Nyra no dormía desde hacía dos ciclos. Había convertido un saliente de basalto en puesto de observación y tenía el cuerpo cubierto de polvo metálico. A su lado, Lira revisaba con pico firme las marcas de impacto sobre un mapa improvisado de piel curtida.
+
+Nyra: El corredor tres se abre en abanico.
+Nyra: No van a caer en línea.
+Nyra: Van a barrer.
+
+Lira: Entonces no defendemos punto.
+Lira: Defendemos tránsito.
+
+La idea cambió toda la arquitectura táctica: dejar de esperar el golpe y empezar a mover el valle como si fuera una sola criatura. Los nidos, las crías y los heridos debían desplazarse por una ruta serpenteante hacia la Cuenca de Niebla Fría, una depresión geológica con paredes altas que reducía impacto directo.
+
+El problema era brutal: la ruta atravesaba el Paso de Colmillo Hueco, territorio históricamente disputado por depredadores del norte y herbívoros del sur. En tiempos normales, cruzarlo con tanta población era declarar guerra.
+En ese amanecer, no cruzarlo era extinguirse por elección.
+
+Orvax reunió al mando en círculo cerrado.
+
+Orvax: No hay honor en quedarse quietos.
+Rhauk: Ni en abandonar crías.
+Tark: Ni en cargar solos.
+Nyra: Entonces marchamos por capas.
+
+Diseñaron la Marcha del Cielo Roto:
+Primera capa: rastreo aéreo y señalización de caída (Lira y su escuadrón).
+Segunda capa: bloque de protección frontal para crías y huevos (Rhauk y dos anquilosaurios de choque).
+Tercera capa: retaguardia de interrupción para fragmentos y depredadores oportunistas (Orvax, Nyra y cazadores mixtos).
+Cuarta capa: equipo de rescate térmico, encargado de extraer heridos de zonas de fuego rápido.
+
+A la primera hora, la columna se movió.
+Miles de pasos de especies que hasta ayer no compartían agua.
+
+El sonido era inmenso: placas óseas raspando roca, alas cortando ceniza, crías llorando, líderes dando órdenes en dialectos distintos.
+Y por encima de todo, el crujido largo del cielo rompiéndose otra vez.
+
+El primer incidente serio llegó en la Garganta del Vaho.
+Un fragmento oblicuo cayó detrás de la columna y levantó una ola de calor que derribó a siete juveniles. Uno quedó atrapado bajo una raíz incendiada.
+
+Nyra saltó sin esperar permiso.
+
+Rhauk: ¡No entres!
+Nyra: ¡Si no entro, no sale!
+
+Entró.
+El calor le quemó el costado.
+Cortó lianas con garras y dientes, empujó al juvenil con la cabeza y lo dejó en manos de Tark, que selló las heridas superficiales con barro mineral.
+
+No hubo aplauso.
+Hubo continuidad.
+Eso era mejor.
+
+Más adelante, en el Paso de Colmillo Hueco, apareció el segundo problema: una manada de carnívoros menores del norte bloqueó la ruta pidiendo prioridad de paso. No querían pelear; querían sobrevivir primero.
+Orvax, que en otro tiempo habría respondido con violencia, dio un paso al frente y cambió la ecuación.
+
+Orvax: Si pelean por el orden, no queda orden.
+Orvax: Se abren dos carriles.
+Orvax: Crías al centro, manadas por flancos.
+Orvax: El que rompa eso, responde conmigo.
+
+La amenaza funcionó porque venía acompañada de una propuesta.
+Se abrieron carriles.
+La marcha siguió.
+
+A media ruta, el cielo mostró su peor cara: una cadena de impactos en patrón escalonado, diseñada por azar cósmico para golpear cada sección de la columna con segundos de diferencia.
+Era el escenario que Nyra había temido.
+
+Lira gritó desde altura:
+
+Lira: ¡Secuencia triple!
+Lira: ¡Frente, centro, retaguardia!
+Lira: ¡No se detengan!
+
+Rhauk clavó cuernos en un bloque desprendido y lo desvió fuera del carril central.
+Tark absorbió un fragmento menor con el lomo blindado y quedó aturdido, pero de pie.
+Orvax saltó sobre una cornisa para derrumbarla justo a tiempo y crear un talud que amortiguó la caída del tercer impacto.
+Nyra coordinó por voz hasta quedarse afónica.
+
+Cuando el polvo bajó, la columna estaba fragmentada en tres grupos.
+Vivos.
+Separados.
+
+El tramo final se volvió una operación de reunificación bajo fuego.
+Los equipos de rescate trabajaron con ritmo imposible: cargar, correr, enfriar, volver.
+Los más pequeños caminaban entre gigantes, cubiertos por sombras que antes les habrían dado miedo.
+
+Al llegar a la Cuenca de Niebla Fría, nadie celebró de inmediato.
+Primero contaron.
+Luego contaron otra vez.
+
+Había bajas.
+Había ausencias.
+Pero la mayoría estaba dentro del perímetro seguro.
+Y el Nido de Niebla, aunque golpeado, seguía en pie.
+
+Esa noche, alrededor de una fogata de piedra húmeda, Nyra se sentó junto a Rhauk y Orvax sin discutir territorio.
+
+Nyra: Pensé que no iban a escucharme.
+Rhauk: Pensé que no ibas a volver de la garganta.
+Orvax: Pensé que hoy me tocaba caer.
+Tark: Pensamos demasiado.
+Tark: Marchamos mejor.
+
+La frase quedó flotando como resumen del día.
+
+Pero el episodio no cierra en calma.
+Un vigía pterosaurio aterriza en emergencia con un fragmento extraño incrustado en el ala: no es roca común, es material oscuro, denso, que emite pulsos regulares.
+No parece meteorito.
+Parece señal.
+
+Lira mira el fragmento, luego el cielo, y dicta lo que nadie quería oír:
+
+Lira: Esto no es solo una tormenta.
+Lira: Alguien está empujando la lluvia.
+
+Último plano:
+la Cuenca llena de supervivientes, la barrera reforzándose, y sobre todos ellos, una grieta luminosa con forma de arco.
+No era el final del desastre.
+Era el prólogo de una guerra más grande que el propio cielo.`
                                         }
                                     }
                                 ]
@@ -4898,6 +5763,48 @@ Y nadie, por primera vez, está seguro de cuál opción es realmente la más seg
             return String(text || '').trim().split(/\s+/).filter(Boolean).length;
         }
 
+        function escapeHtml(text) {
+            return String(text || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function nl2br(text) {
+            return String(text || '').replace(/\n/g, '<br>');
+        }
+
+        function renderStoryRichText(rawText) {
+            const source = String(rawText || '');
+            const flashbackRegex = /\[FLASHBACK\|([^\]]+)\]([\s\S]*?)\[\/FLASHBACK\]/g;
+            let html = '';
+            let lastIndex = 0;
+            let match;
+
+            while ((match = flashbackRegex.exec(source)) !== null) {
+                const plainChunk = source.slice(lastIndex, match.index);
+                if (plainChunk) html += nl2br(escapeHtml(plainChunk));
+
+                const flashTitle = escapeHtml((match[1] || 'Flashback').trim());
+                const flashBody = nl2br(escapeHtml((match[2] || '').trim()));
+                html += `
+                    <details class="ws-flashback">
+                        <summary>${flashTitle}</summary>
+                        <div class="ws-flashback-body">${flashBody}</div>
+                    </details>
+                `;
+
+                lastIndex = match.index + match[0].length;
+            }
+
+            const remaining = source.slice(lastIndex);
+            if (remaining) html += nl2br(escapeHtml(remaining));
+
+            return html;
+        }
+
         function buildLongEpisodeText(baseText, episodeTitle, seriesTitle) {
             const base = String(baseText || '').trim();
             if (!base) return base;
@@ -5013,11 +5920,82 @@ Y nadie, por primera vez, está seguro de cuál opción es realmente la más seg
                 alert(`Saldo insuficiente. Necesitas ${totalCost} WildGems para desbloquear todo.`);
                 return;
             }
-            if (!confirm(`Vas a desbloquear ${lockedEpisodes.length} episodios por ${totalCost} WildGems. ¿Continuar?`)) return;
+
+            const episodesListHtml = lockedEpisodes
+                .map((ep, idx) => `
+                    <div style="display:flex; justify-content:space-between; gap:0.8rem; padding:0.55rem 0.65rem; border:1px solid var(--glass-border); border-radius:10px; background:rgba(255,255,255,0.03);">
+                        <div style="min-width:0;">
+                            <div style="font-weight:700; color:var(--text-primary); font-size:0.82rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${idx + 1}. ${ep.title}</div>
+                            <div style="font-size:0.7rem; color:var(--text-secondary);">ID: ${ep.id}</div>
+                        </div>
+                        <div style="font-weight:800; color:var(--accent); font-size:0.82rem; white-space:nowrap;">${WS_EPISODE_PRICE} WG</div>
+                    </div>
+                `)
+                .join('');
+
+            const checkoutHtml = `
+                <div style="max-width:760px; width:100%;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; gap:0.8rem; margin-bottom:0.75rem;">
+                        <h3 style="margin:0; font-family:'Orbitron'; font-size:1rem; color:var(--text-primary);">Checkout: ${book.title}</h3>
+                        <span style="padding:0.28rem 0.6rem; border-radius:999px; border:1px solid var(--glass-border); color:var(--text-secondary); font-size:0.72rem;">
+                            ${lockedEpisodes.length} episodios
+                        </span>
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr; gap:0.45rem; max-height:280px; overflow:auto; padding-right:0.2rem; margin-bottom:0.85rem;">
+                        ${episodesListHtml}
+                    </div>
+                    <div style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0.55rem; margin-bottom:0.85rem;">
+                        <div style="border:1px solid var(--glass-border); border-radius:10px; padding:0.6rem; background:rgba(255,255,255,0.03);">
+                            <div style="font-size:0.65rem; color:var(--text-secondary);">Costo unitario</div>
+                            <div style="font-weight:800; color:var(--text-primary);">${WS_EPISODE_PRICE} WG</div>
+                        </div>
+                        <div style="border:1px solid var(--glass-border); border-radius:10px; padding:0.6rem; background:rgba(255,255,255,0.03);">
+                            <div style="font-size:0.65rem; color:var(--text-secondary);">Total</div>
+                            <div style="font-weight:800; color:var(--accent);">${totalCost} WG</div>
+                        </div>
+                        <div style="border:1px solid var(--glass-border); border-radius:10px; padding:0.6rem; background:rgba(255,255,255,0.03);">
+                            <div style="font-size:0.65rem; color:var(--text-secondary);">Saldo actual</div>
+                            <div style="font-weight:800; color:${userBalance >= totalCost ? 'var(--ok)' : 'var(--danger)'};">${userBalance} WG</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; gap:0.65rem; justify-content:flex-end; flex-wrap:wrap;">
+                        <button class="btn" style="padding:0.7rem 1rem; border-radius:12px; background:rgba(255,255,255,0.06);" onclick="closeModal()">
+                            Cancelar
+                        </button>
+                        <button class="btn btn-primary" style="padding:0.7rem 1.1rem; border-radius:12px;" onclick="window.confirmBulkBuyAllEpisodes('${book.id}')">
+                            Comprar todo (${totalCost} WG)
+                        </button>
+                    </div>
+                </div>
+            `;
+            showModal(checkoutHtml);
+            window.__wsBulkEpisodeCheckout = {
+                bookId: book.id,
+                episodeIds: lockedEpisodes.map(e => e.id),
+                totalCost,
+                triggerButton: triggerButton || null
+            };
+        }
+
+        window.confirmBulkBuyAllEpisodes = async function (bookId) {
+            const ctx = window.__wsBulkEpisodeCheckout || null;
+            if (!ctx || ctx.bookId !== bookId) return;
+            const book = getBookById(ctx.bookId);
+            if (!book) return;
+            const lockedEpisodes = book.seasons
+                .flatMap(s => s.episodes)
+                .filter(e => ctx.episodeIds.includes(e.id) && !purchasedEpisodes[e.id]);
+            if (!lockedEpisodes.length) {
+                closeModal();
+                alert('Ya tienes todos los episodios desbloqueados.');
+                return;
+            }
+            if (!selected_card_id) { closeModal(); showCardSelector(true); return; }
 
             const card = userCards.find(c => c.id == selected_card_id);
             if (!card?.card_number) { alert('Tarjeta no válida.'); return; }
 
+            const triggerButton = ctx.triggerButton;
             const originalText = triggerButton ? triggerButton.innerHTML : '';
             if (triggerButton) {
                 triggerButton.dataset.loading = '1';
@@ -5025,6 +6003,7 @@ Y nadie, por primera vez, está seguro de cuál opción es realmente la más seg
                 triggerButton.classList.add('is-loading');
                 triggerButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> PROCESANDO...';
             }
+            closeModal();
 
             let success = false;
             try {
@@ -5034,7 +6013,7 @@ Y nadie, por primera vez, está seguro de cuál opción es realmente la más seg
                     body: JSON.stringify({
                         cardNumber: card.card_number,
                         currencyType: 'wildgems',
-                        amount: -totalCost,
+                        amount: -ctx.totalCost,
                         concepto: `WildShorts pack completo: ${book.id} (${lockedEpisodes.length} episodios)`
                     })
                 });
@@ -5066,8 +6045,9 @@ Y nadie, por primera vez, está seguro de cuál opción es realmente la más seg
                     triggerButton.classList.remove('is-loading');
                     triggerButton.innerHTML = success ? '<i class="fa-solid fa-check"></i> COMPLETADO' : originalText;
                 }
+                window.__wsBulkEpisodeCheckout = null;
             }
-        }
+        };
 
         window.showArticle = (id) => {
             let episode = null;
@@ -5081,7 +6061,7 @@ Y nadie, por primera vez, está seguro de cuál opción es realmente la más seg
             showModal(`
                 <article style="padding:1rem; position:relative;">
                     <h2 class="story-title" style="margin-bottom: 1.5rem;">${episode.title}</h2>
-                    <div class="story-content" style="white-space:pre-wrap; font-size: 1.05rem; line-height: 1.8; color: #e2e8f0;">${readableText}</div>
+                    <div class="story-content" style="font-size: 1.05rem; line-height: 1.8; color: #e2e8f0;">${renderStoryRichText(readableText)}</div>
                     <div style="margin-top:1.4rem; border:1px solid var(--border); border-radius:16px; padding:1rem; background:rgba(13,18,16,0.65);">
                         <div style="font-weight:800; margin-bottom:0.35rem;">Confirmación estricta de lectura</div>
                         <div style="font-size:0.82rem; color:var(--text-secondary); margin-bottom:0.55rem;">Escribe <strong>CONFIRMAR</strong> para validar este episodio y sumar progreso de recompensa.</div>
@@ -5335,6 +6315,7 @@ Y nadie, por primera vez, está seguro de cuál opción es realmente la más seg
 </body>
 
 </html>
+
 
 
 
