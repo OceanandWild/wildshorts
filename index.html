@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://owsdatabase.onrender.com/shared/ows-project-guard.js"></script>
     <style>
         :root {
             --bg: #0f1211;
@@ -745,6 +746,14 @@
 
     <script>
         const API_URL = 'https://owsdatabase.onrender.com';
+        if (window.OWSProjectRestrictionGuard && typeof window.OWSProjectRestrictionGuard.mount === 'function') {
+            window.OWSProjectRestrictionGuard.mount({
+                apiBaseUrl: API_URL,
+                projectSlug: 'wildshorts',
+                projectName: 'WildShorts',
+                checkIntervalMs: 30000
+            });
+        }
         let oceanPayToken = localStorage.getItem('opToken');
         let oceanPayUser = JSON.parse(localStorage.getItem('opUser') || 'null');
         let userBalance = 0;
